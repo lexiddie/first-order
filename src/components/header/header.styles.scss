@@ -7,8 +7,11 @@
 
   .logo-container {
     height: 100%;
-    width: 70px;
+    width: 50%;
     padding: 25px;
+    padding-left: 50px;
+    display: flex;
+    justify-content: center;
 
     > img {
       width: 40px;
@@ -21,11 +24,15 @@
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
 
     .option {
       padding: 10px 15px;
       cursor: pointer;
+
+      &:last-child {
+        margin-right: 200px;
+      }
     }
   }
 }

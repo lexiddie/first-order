@@ -1,7 +1,6 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { createStructuredSelector } from 'reselect';
 
 import Home from './pages/home/home.component';
 import Product from './pages/product/product.component';
@@ -10,14 +9,14 @@ import Contact from './pages/contact/contact.component';
 
 import Header from './components/header/header.component';
 
-import './App.css';
+import './App.scss';
 
 class App extends React.Component {
   componentWillUnmount() {}
 
   render() {
     return (
-      <div>
+      <div className='main'>
         <Header />
         <Switch>
           <Route exact path='/' component={Home} />
@@ -30,8 +29,4 @@ class App extends React.Component {
   }
 }
 
-const mapStateToProps = createStructuredSelector({});
-
-const mapDispatchToProps = (dispatch) => ({});
-
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default connect()(App);

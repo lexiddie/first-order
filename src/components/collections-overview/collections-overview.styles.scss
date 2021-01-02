@@ -1,4 +1,9 @@
 .collections-overview {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  width: 50vw;
+  height: 100vw;
+  justify-content: center;
+  align-items: flex-start;
+  // background-color: aqua;
 }
