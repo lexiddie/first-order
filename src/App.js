@@ -1,6 +1,5 @@
 import React from 'react';
-import { Switch, Route } from 'react-router-dom';
-import { connect } from 'react-redux';
+import { withRouter, Switch, Route } from 'react-router-dom';
 
 import Home from './pages/home/home.component';
 import Product from './pages/product/product.component';
@@ -11,22 +10,19 @@ import Header from './components/header/header.component';
 
 import './App.scss';
 
-class App extends React.Component {
-  componentWillUnmount() {}
+const App = (props) => {
+  console.log(`Checking Props App`, props);
+  return (
+    <div className='main'>
+      <Header />
+      <Switch>
+        <Route exact path='/' component={Home} />
+        <Route path='/product' component={Product} />
+        <Route path='/about' component={About} />
+        <Route path='/contact' component={Contact} />
+      </Switch>
+    </div>
+  );
+};
 
-  render() {
-    return (
-      <div className='main'>
-        <Header />
-        <Switch>
-          <Route exact path='/' component={Home} />
-          <Route path='/product' component={Product} />
-          <Route path='/about' component={About} />
-          <Route path='/contact' component={Contact} />
-        </Switch>
-      </div>
-    );
-  }
-}
-
-export default connect()(App);
+export default withRouter(App);
