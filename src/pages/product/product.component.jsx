@@ -7,7 +7,6 @@ import './product.styles.scss';
 
 const Product = (props) => {
   const { match } = props;
-  console.log(`Checking Match`, match);
   return (
     <>
       <div className='product'>

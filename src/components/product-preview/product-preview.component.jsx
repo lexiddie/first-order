@@ -11,12 +11,8 @@ const ProductPreview = ({ collection, interests }) => {
   const [calculate, setCalculate] = useState({});
   const [activeSelect, setActiveSelect] = useState(0);
   const { name, price, imageUrl } = collection;
-  console.log(`Checking Collection`, collection);
-  console.log(`Checking Interests`, interests);
-  console.log(`Checking Calculate`, calculate);
 
   const toggle = (tab) => {
-    console.log(`Checking Toggle, ${tab}`);
     if (activeSelect !== tab) {
       setActiveSelect(tab);
       calculateInterest(tab);
@@ -31,7 +27,6 @@ const ProductPreview = ({ collection, interests }) => {
     const totalInterest = interestPerMonth * month;
     const totalPayment = price + totalInterest;
     const totalPaymentPerMonth = totalPayment / month;
-    console.log(`Checking Interest: ${interestPerYear}`);
     setCalculate({
       rate,
       month,

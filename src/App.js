@@ -11,7 +11,6 @@ import Header from './components/header/header.component';
 import './App.scss';
 
 const App = (props) => {
-  console.log(`Checking Props App`, props);
   return (
     <div className='main'>
       <Header />
