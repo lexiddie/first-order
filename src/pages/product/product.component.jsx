@@ -11,8 +11,8 @@ const Product = (props) => {
   return (
     <>
       <div className='product'>
-        <Route exact path={`/first-order${match.path}`} render={() => <Redirect from='*' to='/' />} />
-        <Route path={`/first-order${match.path}/:productId`} component={ProductPreview} />
+        <Route exact path={`${match.path}`} render={() => <Redirect from='*' to='/' />} />
+        <Route path={`${match.path}/:productId`} component={ProductPreview} />
       </div>
     </>
   );
