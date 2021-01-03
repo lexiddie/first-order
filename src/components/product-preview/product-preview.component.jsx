@@ -67,8 +67,7 @@ const ProductPreview = ({ collection, interests }) => {
           </div>
           <div>
             <div>
-              <label>Period in months: </label>
-              <NumberFormat className='price' value={calculate.month} displayType={'text'} thousandSeparator={true} prefix={'฿'} />
+              <label>Period in months: {calculate.month}</label>
             </div>
             <div>
               <label>Interest per year: </label>
