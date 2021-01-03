@@ -2,14 +2,12 @@
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 30px;
-  // background-color: pink;
-  height: inherit;
-  width: inherit;
+  height: 100%;
+  width: 40%;
 
   .preview {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 100%;
   }
 }

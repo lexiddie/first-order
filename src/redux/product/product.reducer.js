@@ -1,7 +1,21 @@
 import productData from './product.data';
 
 const INITIAL_STATE = {
-  collections: productData
+  collections: productData,
+  interests: [
+    {
+      rate: 0,
+      month: 12
+    },
+    {
+      rate: 4,
+      month: 24
+    },
+    {
+      rate: 8,
+      month: 36
+    }
+  ]
 };
 
 const productReducer = (state = INITIAL_STATE, action) => {

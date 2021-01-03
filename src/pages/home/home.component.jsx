@@ -8,9 +8,7 @@ const Home = (props) => {
   const { match } = props;
   return (
     <>
-      <div>
-        <Route exact path={`${match.path}`} component={CollectionsOverview} />
-      </div>
+      <Route exact path={`${match.path}`} component={CollectionsOverview} />
     </>
   );
 };

@@ -4,6 +4,8 @@ const selectProduct = (state) => state.product;
 
 export const selectCollections = createSelector([selectProduct], (product) => product.collections);
 
+export const selectInterests = createSelector([selectProduct], (product) => product.interests);
+
 export const selectCollection = (collectionId) =>
   createSelector([selectCollections], (collections) =>
     collections

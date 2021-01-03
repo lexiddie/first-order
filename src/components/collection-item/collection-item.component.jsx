@@ -8,7 +8,6 @@ import './collection-item.styles.scss';
 
 const CollectionItem = ({ item, history }) => {
   const { id, name, price, imageUrl } = item;
-  console.log(`Checking History`, history);
   return (
     <div className='collection-item'>
       <div className='image' style={{ backgroundImage: `url(${imageUrl})` }} />
