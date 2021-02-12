@@ -14,11 +14,11 @@ import './App.scss';
 dotenv.config();
 
 const App = (props) => {
-  const apiUri = process.env.DOMAIN;
-  const uri = process.env.REACT_APP_FOO;
+  const domain = process.env.DOMAIN;
+  const lex = process.env.LEX;
 
-  console.log('apiUri', apiUri);
-  console.log('URI', uri);
+  console.log('DOMAIN:', domain);
+  console.log('LEX:', lex);
 
   return (
     <div className='main'>
