@@ -1,6 +1,5 @@
 import React from 'react';
 import { withRouter, Switch, Route } from 'react-router-dom';
-import dotenv from 'dotenv';
 
 import Home from './pages/home/home.component';
 import Product from './pages/product/product.component';
@@ -10,8 +9,6 @@ import Contact from './pages/contact/contact.component';
 import Header from './components/header/header.component';
 
 import './App.scss';
-
-dotenv.config();
 
 const App = (props) => {
   const domain = process.env.DOMAIN;
