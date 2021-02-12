@@ -11,11 +11,11 @@ import Header from './components/header/header.component';
 import './App.scss';
 
 const App = (props) => {
-  const domain = process.env.DOMAIN;
-  const lex = process.env.LEX;
+  const lex = process.env.REACT_APP_LEX;
+  const uri = process.env.REACT_APP_URI;
 
-  console.log('DOMAIN:', domain);
-  console.log('LEX:', lex);
+  console.log('REACT_APP_LEX:', lex);
+  console.log('REACT_APP_URI:', uri);
 
   return (
     <div className='main'>
