@@ -8,17 +8,17 @@ import './header.styles.scss';
 
 const Header = (props) => (
   <div className='header'>
-    <Link className='logo-container' to='/first-order/'>
+    <Link className='logo-container' to='/'>
       <img src={Logo} alt='Logo' />
     </Link>
     <div className='options'>
-      <Link className='option' to='/first-order/'>
+      <Link className='option' to='/'>
         Home
       </Link>
-      <Link className='option' to='/first-order/about'>
+      <Link className='option' to='/about'>
         About
       </Link>
-      <Link className='option' to='/first-order/contact'>
+      <Link className='option' to='/contact'>
         Contact
       </Link>
     </div>
