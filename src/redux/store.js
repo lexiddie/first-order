@@ -9,6 +9,7 @@ const middlewares = [];
 
 if (process.env.NODE_ENV === 'development') {
   middlewares.push(logger);
+  dotenv.config();
 } else {
   dotenv.config();
 }
