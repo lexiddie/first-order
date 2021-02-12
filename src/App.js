@@ -13,9 +13,11 @@ import './App.scss';
 const App = (props) => {
   const port = process.env.REACT_APP_PORT;
   const uri = process.env.REACT_APP_URI;
+  const customPort = process.env.CUSTOMCONNSTR_REACT_APP_PORT;
 
   console.log('REACT_APP_PORT:', port);
   console.log('REACT_APP_URI:', uri);
+  console.log('CUSTOMCONNSTR_REACT_APP_PORT:', customPort);
 
   return (
     <div className='main'>
