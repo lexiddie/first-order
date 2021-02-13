@@ -1,5 +1,6 @@
 import React from 'react';
 import { withRouter, Switch, Route } from 'react-router-dom';
+import { DotenvAzure } from 'dotenv-azure';
 
 import Home from './pages/home/home.component';
 import Product from './pages/product/product.component';
@@ -10,7 +11,14 @@ import Header from './components/header/header.component';
 
 import './App.scss';
 
+const main = async () => {
+  await new DotenvAzure().config();
+  console.log(`Port: ${process.env.REACT_APP_PORT}`);
+  console.log(`Uri: ${process.env.REACT_APP_URI}`);
+};
+
 const App = (props) => {
+  main();
   console.log(`PROCESS ENV`, process.env);
 
   const port = process.env.REACT_APP_PORT;
