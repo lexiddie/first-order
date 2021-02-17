@@ -38,6 +38,12 @@ const ProductPreview = ({ collection, interests }) => {
     });
   };
 
+  const port = process.env.REACT_APP_PORT;
+  const uri = process.env.REACT_APP_URI;
+
+  console.log('REACT_APP_PORT:', port);
+  console.log('REACT_APP_URI:', uri);
+
   useEffect(() => {
     calculateInterest(activeSelect);
   }, []);
