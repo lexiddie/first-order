@@ -11,12 +11,6 @@ import Header from './components/header/header.component';
 import './App.scss';
 
 const App = (props) => {
-  const port = process.env.REACT_APP_PORT;
-  const uri = process.env.REACT_APP_URI;
-
-  console.log('REACT_APP_PORT:', port);
-  console.log('REACT_APP_URI:', uri);
-
   return (
     <div className='main'>
       <Header />

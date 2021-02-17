@@ -38,6 +38,8 @@ const ProductPreview = ({ collection, interests }) => {
     });
   };
 
+  console.log(`Checking Current Uri`, window.location.origin);
+
   const port = process.env.REACT_APP_PORT;
   const uri = process.env.REACT_APP_URI;
 
